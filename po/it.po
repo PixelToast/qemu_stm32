@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QEMU 1.4.50\n"
 "Report-Msgid-Bugs-To: qemu-devel@nongnu.org\n"
-"POT-Creation-Date: 2014-07-29 08:14+0200\n"
+"POT-Creation-Date: 2019-01-02 10:04-0500\n"
 "PO-Revision-Date: 2014-07-29 08:25+0200\n"
 "Last-Translator: Paolo Bonzini <pbonzini@redhat.com>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -39,6 +39,10 @@ msgstr "_Spegni"
 #: ui/gtk.c:1616
 msgid "_Quit"
 msgstr "_Esci"
+
+#: ui/gtk.c:1692
+msgid "_Fullscreen"
+msgstr ""
 
 #: ui/gtk.c:1702
 msgid "Zoom _In"

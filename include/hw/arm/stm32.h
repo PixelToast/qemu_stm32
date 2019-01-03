@@ -167,6 +167,9 @@ const char *stm32_periph_name(stm32_periph_t periph);
 
 #define STM32_ADC1_2_IRQ 18
 
+#define STM32_SPI1_IRQ 35
+#define STM32_SPI2_IRQ 36
+
 #define STM32_UART1_IRQ 37
 #define STM32_UART2_IRQ 38
 #define STM32_UART3_IRQ 39
@@ -397,7 +400,7 @@ typedef struct Stm32 Stm32;
 
 /* Initialize the STM32 microcontroller.  Returns arrays
  * of GPIOs and UARTs so that connections can be made. */
-void stm32_init(
+qemu_irq * stm32_init(
             ram_addr_t flash_size,
             ram_addr_t ram_size,
             const char *kernel_filename,

@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="qemu_stm32" targetName="qemu_stm32" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6efa89d0-4bf2-4693-9022-cfd4f641f3b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hw/arm/vex_cortex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw/arm/vex_mgr.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/hw/arm/vex_cortex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exec.c" beforeDir="false" afterPath="$PROJECT_DIR$/exec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw/arm/Makefile.objs" beforeDir="false" afterPath="$PROJECT_DIR$/hw/arm/Makefile.objs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw/arm/stm32.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw/arm/stm32.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw/arm/stm32_adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw/arm/stm32_adc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/hw/arm/stm32.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/hw/arm/stm32.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/de_DE.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/de_DE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/hu.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/hu.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/it.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/it.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/messages.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/messages.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/po/tr.po" beforeDir="false" afterPath="$PROJECT_DIR$/po/tr.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trace-events" beforeDir="false" afterPath="$PROJECT_DIR$/trace-events" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vl.c" beforeDir="false" afterPath="$PROJECT_DIR$/vl.c" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="2068202190">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Makefile" value="2" />
+          <entry key="c" value="29" />
+          <entry key="h" value="12" />
+          <entry key="objs" value="2" />
+          <entry key="trace-events" value="1" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="3" />
+          <entry key="ObjectiveC" value="41" />
+          <entry key="PLAIN_TEXT" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Makefile" value="2" />
+          <entry key="c" value="4034" />
+          <entry key="h" value="28" />
+          <entry key="objs" value="16" />
+          <entry key="txt" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="15" />
+          <entry key="ObjectiveC" value="4062" />
+          <entry key="PLAIN_TEXT" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/arm/stm32_dma.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="250" column="29" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/arm/stm32_adc.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="715" column="59" selection-start-line="715" selection-start-column="59" selection-end-line="715" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/hw/arm/stm32.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-135">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/hw/arm/vex_cortex.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/arm/vex_cortex.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+              <folding>
+                <element signature="e#861#886#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw/arm/vex_mgr.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1638">
+              <caret line="115" column="1" lean-forward="true" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
+              <folding>
+                <element signature="e#1148#1170#0" expanded="true" />
+                <element signature="e#1248#1488#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/arm/stm32.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-305">
+              <caret line="242" column="16" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/arm/armv7m.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-365">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+              <folding>
+                <element signature="e#148#170#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/exec/cpu-all.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+              <folding>
+                <element signature="e#1336#1356#0" expanded="true" />
+                <element signature="e#1386#1801#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/hw/arm/arm.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#185#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>vex_mgr_crea</find>
+      <find>DEVICE</find>
+      <find>g_malloc(</find>
+      <find>malloc_and_trace</find>
+      <find>mem_trace</find>
+      <find>g_malloc</find>
+      <find>GCC_FMT_ATTR</find>
+      <find>cpu_abort</find>
+      <find>abort(</find>
+      <find>abort(CPUS</find>
+      <find>stm32_dma_init</find>
+      <find>ifcr</find>
+      <find>vex_mgr_reset</find>
+      <find>irq</find>
+      <find>qemu_irq</find>
+      <find>STM32</find>
+      <find>STM32_UART1_IRQ</find>
+      <find>dma_irq</find>
+      <find>pic</find>
+      <find>stm32_init</find>
+      <find>circular_timer</find>
+      <find>HARD</find>
+      <find>hard</find>
+      <find>fault</find>
+      <find>mem</find>
+      <find>write</find>
+      <find>vex_mgr_stream_circular_timer</find>
+      <find>cpu_physical_memory_read</find>
+      <find>bitband_addr</find>
+      <find>tswap32</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>fprintf(stderr,</replace>
+      <replace>f103vd</replace>
+      <replace>my_exit</replace>
+      <replace>my_exit(</replace>
+      <replace>vex_mgr</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/hw/arm</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hw/arm/stm32_f103vd.c" />
+        <option value="$PROJECT_DIR$/hw/arm/Makefile.objs" />
+        <option value="$PROJECT_DIR$/hw/arm/stm32_f103c8.c" />
+        <option value="$PROJECT_DIR$/qemu-char.c" />
+        <option value="$PROJECT_DIR$/gdbstub.c" />
+        <option value="$PROJECT_DIR$/hw/arm/stm32_dma.c" />
+        <option value="$PROJECT_DIR$/memory.c" />
+        <option value="$PROJECT_DIR$/hw/arm/stm32_adc.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/hw/char/stm32_uart.c" />
+        <option value="$PROJECT_DIR$/vl.c" />
+        <option value="$PROJECT_DIR$/trace-events" />
+        <option value="$PROJECT_DIR$/exec.c" />
+        <option value="$PROJECT_DIR$/hw/arm/stm32.c" />
+        <option value="$PROJECT_DIR$/include/hw/arm/vex_cortex.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/hw/arm/stm32.h" />
+        <option value="$PROJECT_DIR$/hw/arm/vex_cortex.c" />
+        <option value="$PROJECT_DIR$/hw/arm/vex_mgr.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1616" />
+    <option name="y" value="178" />
+    <option name="width" value="1392" />
+    <option name="height" value="1003" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="exec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qemu_stm32" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qemu_stm32" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="qom" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/ping/git/qemu_stm32/hw/char/stm32_uart.c" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/hw/arm" />
+      <recent name="$PROJECT_DIR$/hw/arm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.qemu_stm32">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="qemu_stm32" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="qemu_stm32" TARGET_NAME="qemu_stm32" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="qemu_stm32" RUN_TARGET_NAME="qemu_stm32">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.qemu_stm32" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6efa89d0-4bf2-4693-9022-cfd4f641f3b6" name="Default Changelist" comment="" />
+      <created>1544789460460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544789460460</updated>
+      <workItem from="1544789462910" duration="117000" />
+      <workItem from="1544789601112" duration="31000" />
+      <workItem from="1544789635396" duration="20446000" />
+      <workItem from="1544919219807" duration="11000" />
+      <workItem from="1544934890393" duration="5772000" />
+      <workItem from="1544992328685" duration="3039000" />
+      <workItem from="1545031890224" duration="674000" />
+      <workItem from="1546435342994" duration="943000" />
+      <workItem from="1546437423256" duration="22556000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="53589000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1439" y="-1" width="1922" height="1058" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14674494" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.11891892" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32972974" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/hw/sysbus.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpus.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="481" column="5" selection-start-line="481" selection-start-column="5" selection-end-line="481" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/hw/boards.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/qemu/option_int.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/qemu/option.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gdbstub.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1674" column="16" selection-start-line="1674" selection-start-column="16" selection-end-line="1674" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="1148" column="5" selection-start-line="1148" selection-start-column="5" selection-end-line="1148" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qemu-char.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="3620" column="4" selection-start-line="3620" selection-start-column="4" selection-end-line="3620" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/gpio/stm32_gpio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5010">
+          <caret line="334" column="29" selection-start-line="334" selection-start-column="29" selection-end-line="334" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stellaris.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/qemu/bitops.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5295">
+          <caret line="353" column="3" selection-start-line="353" selection-start-column="3" selection-end-line="353" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/core/qdev.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stm32_spi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+          <folding>
+            <element signature="e#1146#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/Makefile.objs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/char/stm32_uart.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="748" column="23" selection-start-line="748" selection-start-column="5" selection-end-line="748" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/pxa2xx.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="2078" column="30" selection-start-line="2078" selection-start-column="14" selection-end-line="2078" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/pxa2xx_pic.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/pxa2xx_gpio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="267" selection-start-line="267" selection-end-line="267" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stm32_f103c8.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="475" column="12" selection-start-line="475" selection-start-column="12" selection-end-line="475" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="2862" column="14" selection-start-line="2862" selection-start-column="14" selection-end-line="2862" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trace-events">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="508" column="42" selection-start-line="508" selection-start-column="42" selection-end-line="508" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exec.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1915">
+          <caret line="755" column="30" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
+          <folding>
+            <element signature="e#20439#20584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/qom/cpu.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="641" column="28" selection-start-line="641" selection-start-column="19" selection-end-line="641" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="444" column="59" selection-start-line="444" selection-start-column="59" selection-end-line="444" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="414" column="21" selection-start-line="414" selection-start-column="21" selection-end-line="414" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/hw/arm/arm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#185#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/hw/arm/vex_cortex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stm32.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="242" column="16" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/hw/arm/stm32.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/armv7m.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding>
+            <element signature="e#148#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/exec/cpu-all.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+          <folding>
+            <element signature="e#1336#1356#0" expanded="true" />
+            <element signature="e#1386#1801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stm32_adc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="715" column="59" selection-start-line="715" selection-start-column="59" selection-end-line="715" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/stm32_dma.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="250" column="29" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/vex_cortex.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#861#886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/arm/vex_mgr.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="115" column="1" lean-forward="true" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
+          <folding>
+            <element signature="e#1148#1170#0" expanded="true" />
+            <element signature="e#1248#1488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

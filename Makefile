@@ -528,7 +528,7 @@ endif # SIGNCODE
            arch=$${i%.exe}; \
            arch=$${arch#qemu-system-}; \
            echo Section \"$$arch\" Section_$$arch; \
-           echo SetOutPath \"\$$INSTDIR\"; \
+                      echo SetOutPath \"\$$INSTDIR\"; \
            echo File \"\$${BINDIR}\\$$i\"; \
            echo SectionEnd; \
          done \

@@ -1,0 +1,3 @@
+/home/ping/git/qemu_stm32/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ping/git/qemu_stm32/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ping/git/qemu_stm32/cmake-build-debug/CMakeFiles/qemu_stm32.dir

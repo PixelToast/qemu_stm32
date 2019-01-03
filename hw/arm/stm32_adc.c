@@ -797,7 +797,7 @@ static void stm32_ADC_SR_write(Stm32Adc *s, uint32_t new_value)
     if(new_value & ADC_SR_EOC)
      hw_error("Software attempted to set ADC SR_EOC bit\n");
     if(new_value & ADC_SR_JEOC)
-     hw_error("Software attempted to set ADC SR_JEOC bit\n");  
+     hw_error("Software attempted to set ADC SR_JEOC bit\n");
     if(new_value & ADC_SR_AWD)
      hw_error("Software attempted to set ADC SR_EOC bit\n");
     if(new_value & ADC_SR_JSTRT)
@@ -814,7 +814,7 @@ static void stm32_ADC_SQR1_write(Stm32Adc *s,uint32_t new_value)
 {  
     /* check if number of conversion (ADC_SQR1[24 20]) greater than 1 */  
      if((new_value >> 20 & 0x0000000f) > 1) 
-     hw_error("Mode Single conversion is only implemented\n");
+        stm32_hw_warn("Mode Single conversion is only implemented\n");
 
      s->ADC_SQR1=new_value & 0x00ffffff;
 }

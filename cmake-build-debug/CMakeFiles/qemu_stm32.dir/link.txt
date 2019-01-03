@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   @CMakeFiles/qemu_stm32.dir/objects1.rsp  -o qemu_stm32 

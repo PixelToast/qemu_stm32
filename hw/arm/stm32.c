@@ -77,7 +77,7 @@ const char *stm32_periph_name_arr[] =
      "I2C2",
      "I2S1",
      "I2S2",
-     "IWDG"
+     "IWDG",
      "WWDG",
      "CAN1",
      "CAN2",
@@ -226,7 +226,7 @@ static void stm32_create_dac_dev(
 }
 
 
-void stm32_init(
+qemu_irq * stm32_init(
             ram_addr_t flash_size,
             ram_addr_t ram_size,
             const char *kernel_filename,
@@ -351,4 +351,6 @@ void stm32_init(
     sysbus_connect_irq(SYS_BUS_DEVICE(dma1), 5, pic[STM32_DMA1_STREAM5_IRQ]);
     sysbus_connect_irq(SYS_BUS_DEVICE(dma1), 6, pic[STM32_DMA1_STREAM6_IRQ]);
     sysbus_connect_irq(SYS_BUS_DEVICE(dma1), 7, pic[STM32_DMA1_STREAM7_IRQ]);
+
+    return pic;
 }
