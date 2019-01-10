@@ -63,7 +63,7 @@ typedef struct vex_mgr {
     uint32_t r1;
     uint32_t r2;
 
-    bool svInitialized;
+    uint64_t svInitLastPulse;
     bool svFirstSync;
     char robotName[8];
     vex_sv_status svStatus;
@@ -77,13 +77,14 @@ static void vex_mgr_stream_circular_timer(void *opaque) {
     uint64_t curr_time = qemu_clock_get_ns(QEMU_CLOCK_VIRTUAL);
     timer_mod(s->circular_timer, curr_time + 10000000);
 
-    if (qemu_clock_get_ms(QEMU_CLOCK_VIRTUAL) > 1000 && !s->svInitialized) {
-        printf("[QEMU] Poking SPI1 interrupt\n");
-        s->svInitialized = true;
+    if (curr_time - s->svInitLastPulse > 10000000 && !s->svFirstSync) {
+        // Keep pulsing until sync
+        printf("[QEMU] Pulsing SPI1 interrupt\n");
+        s->svInitLastPulse = curr_time;
         s->r1 = 0;
         s->r2 = 0;
         qemu_irq_pulse(s->pic[STM32_SPI1_IRQ]);
-    } else if (s->svInitialized) {
+    } else if (s->svFirstSync) {
         s->r1 = 1;
         s->r2 = 0;
         qemu_irq_pulse(s->pic[STM32_SPI1_IRQ]);
@@ -235,12 +236,12 @@ vex_mgr_init(SysBusDevice *dev)
 {
 	vex_mgr *s = OBJECT_CHECK(vex_mgr, (dev), "vex_mgr");
 
-	memory_region_init_io(&s->iomem, OBJECT(s), &vex_mgr_ops, s, "mgr", 0xC00);
+	memory_region_init_io(&s->iomem, OBJECT(s), &vex_mgr_ops, s, "vex_mgr", 0xC00);
 	sysbus_init_mmio(dev, &s->iomem);
 
 	s->circular_timer = timer_new_ns(QEMU_CLOCK_VIRTUAL, (QEMUTimerCB *)vex_mgr_stream_circular_timer, s);
-	s->svInitialized = false;
 	s->svFirstSync = false;
+    s->svInitLastPulse = 0;
 
 	return 0;
 }
