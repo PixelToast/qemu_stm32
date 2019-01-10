@@ -35,7 +35,7 @@ static void vex_cortex_init(MachineState *machine)
 {
     const char* kernel_filename = machine->kernel_filename;
 
-    qemu_irq *pic = stm32_init(393215, 65535, kernel_filename, 8000000, 32768);
+    qemu_irq *pic = stm32_init(384, 64, kernel_filename, 8000000, 32768);
 
     DeviceState *mgr = vex_mgr_create(pic);
 

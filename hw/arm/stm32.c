@@ -264,7 +264,7 @@ qemu_irq * stm32_init(
             "stm32-flash-alias-mem",
             address_space_mem,
             0,
-            flash_size);
+            flash_size * 1024);
     memory_region_add_subregion(address_space_mem, 0x08000000, flash_alias_mem);
 
     DeviceState *rcc_dev = qdev_create(NULL, "stm32-rcc");
